@@ -1,0 +1,134 @@
+* {
+    font-family: 'Century Gothic', sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    background: rgb(5, 25, 58);
+}
+
+.parent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent input {
+    padding: 8px 4px;
+    font-size: 18px;
+    font-family: 'Century Gothic', sans-serif;
+    margin-right: 5px;
+    height: 100%;
+    border-color: rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.parent h3 {
+    color: antiquewhite;
+}
+
+.parent button {
+    font-size: 20px;
+    padding: 8px;
+    background: white;
+    border: solid 2px white;
+    color: #0b478f;
+    font-weight: 500;
+    transition: all 0.3 ease;
+}
+
+.parent ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 90px;
+
+}
+
+.parent ul li {
+    width: 120px;
+    height: 150px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding-left: 0;
+
+}
+
+.parent ul li span {
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    display: block;
+    color: #084590;
+    font-size: 30px;
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#result {
+    color: white;
+    font-size: 30px;
+}
+
+#button:hover {
+    color: rgb(10, 1, 1);
+    background-color: #15b438;
+}
+
+@media screen and (max-width : 600px) {
+
+    .parent {
+        margin: 0 auto;
+    }
+
+    .input h3 {
+        font-size: 1.5rem;
+        padding-left: 10px;
+        height: auto;
+        width: 95%;
+    }
+
+    .parent button {
+        font-size: 20px;
+        margin: 20px auto 0;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .parent ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .parent ul li {
+        width: 95%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+
+        padding-left: 0;
+    }
+
+    .parent ul li span {
+        border-radius: 5px;
+        display: block;
+        font-size: 10x;
+        width: 95%;
+        height: auto;
+    }
+
+
+}
